@@ -1,4 +1,35 @@
-body{
+ .galery__items {
+  display: grid;
+  grid-template-columns: 1fr 1fr; 
+  grid-template-rows: repeat(5, auto); 
+  gap: 10px; 
+  align-items: center;
+ }
 
-    
-}
+
+  .galery__item img {
+    max-width: 100%; 
+    height: auto;
+    display: block;
+    align-self: start; 
+  }
+  
+  .galery__item {
+    display: flex;
+    justify-content: flex-start; 
+    align-items: center;
+  }
+  
+  .galery__txt {
+    padding: 10px;
+  }
+  
+  .centered__img {
+    grid-column: 1 / -1; 
+    text-align: center;
+  }
+  
+  .centered__img img {
+    max-width: 200px; 
+    height: auto;
+  }
